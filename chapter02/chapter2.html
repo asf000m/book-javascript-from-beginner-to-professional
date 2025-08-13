@@ -7,7 +7,27 @@
   </head>
   <body>
     <script>
-      
+      let testVar = 1;
+      let varTypeTest1 = typeof testVar;
+      let varTypeTest2 = typeof(testVar);
+      console.log(varTypeTest1);
+      console.log(varTypeTest2);
+
+      let str = "Hello, world!";
+      let nr = 26;
+      let bigNr = 6123581830621081999n;
+      let bool = false;
+      let sym = Symbol("exclusive");
+      let undef = undefined;
+      let unknown = null;
+
+      console.log("str", typeof str);
+      console.log("nr", typeof nr);
+      console.log("bigNr", typeof bigNr);
+      console.log("bool", typeof bool);
+      console.log("sym", typeof sym);
+      console.log("undef", typeof undef);
+      console.log("unknown", typeof unknown);
     </script>
   </body>
 </html>
