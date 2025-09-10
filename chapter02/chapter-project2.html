@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>BMI calculator</title>
+  </head>
+  <body>
+    <script>
+      const CM_IN_INCH = 2.54; // 1 inch is equal to 2.54 cm
+      const POUND_IN_KG = 2.2046; // 2.2046 pounds is equal to 1 kilo
+
+      let inchValue = Number(prompt("Enter a value in inch to convert"));
+      let cmValue = inchValue * CM_IN_INCH;
+      alert(`${inchValue} inch is equal to ${cmValue} cm`);
+
+      let poundValue = Number(prompt("Enter a value in pounds to convert"));
+      let kiloValue = poundValue / POUND_IN_KG;
+      alert(`${poundValue} pounds is equal to ${kiloValue} kilo`);
+
+      let bmi = kiloValue / ((cmValue / 100) ** 2);
+      alert(`Your BMI is ${bmi}`);
+    </script>
+  </body>
+</html>
