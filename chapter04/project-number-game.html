@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Evaluating a number game</title>
+  </head>
+  <body>
+    <script>
+      let dynamicNumber = Math.floor(Math.random() * 10);
+      let userNumber = Number(prompt("Enter a number"));
+
+      if (userNumber > dynamicNumber) {
+        alert("The computer chose a number,\nand your number is greater than that.");
+      }
+      else if (userNumber < dynamicNumber) {
+        alert("The computer chose a number,\nand your number is less than that.");
+      }
+      else {
+        alert("The computer chose a number,\nand your number is equal to that.");
+      }
+    </script>
+  </body>
+</html>

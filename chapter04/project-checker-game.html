@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Friend checker game</title>
+  </head>
+  <body>
+    <script>
+      let friendName = prompt("Enter the name of a person").trim().toLowerCase();
+      let isFriend;
+      
+      switch (friendName) {
+        case "leila":
+        case "hanna":
+        case "virginia":
+        case "jolie":
+        case "rudy":
+        case "emily":
+        case "kaleb":
+        case "diego":
+          isFriend = true;
+          break;
+        default:
+          isFriend = false;
+          break;
+      }
+
+      if (isFriend) {
+        alert("This person is a friend");
+      }
+      else {
+        alert("This person is not a friend")
+      }
+    </script>
+  </body>
+</html>

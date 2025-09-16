@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Rock Paper Scissors game</title>
+  </head>
+  <body>
+    <script>
+      let rockPaperScissors = new Array("rock", "paper", "scissors");
+      let computerRandomNumber = Math.floor(Math.random() * 3);
+      let playerRandomNumber = Math.floor(Math.random() * 3);
+      let computer = rockPaperScissors[computerRandomNumber];
+      let player = rockPaperScissors[playerRandomNumber];
+      let message;
+      
+      if (player === computer) {
+        message = `There is a tie.`;
+      }
+      else if (player === "rock") {
+        if (computer === "paper") {
+          message = "Paper beats rock";
+        }
+        else if (computer === "scissors") {
+          message = "Rock beats scissors";
+        }
+      }
+      else if (player === "paper") {
+        if (computer === "rock") {
+          message = "Paper beats rock";
+        }
+        else if (computer === "scissors") {
+          message = "Scissors beats paper";
+        }
+      }
+      else if (player === "scissors") {
+        if (computer === "rock") {
+          message = "Rock beats scissors";
+        }
+        else if (computer === "paper") {
+          message = "Scissors beats paper";
+        }
+      }
+      
+      alert(`${player} vs ${computer}`);
+      alert(message);
+    </script>
+  </body>
+</html>

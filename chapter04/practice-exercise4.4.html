@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice exercise 4.4</title>
+  </head>
+  <body>
+    <script>
+      let randomIntNumber = Math.floor(Math.random() * 5);
+      let userString = prompt("Enter a string value");
+      let response;
+
+      switch (randomIntNumber) {
+        case 0:
+          response = "Hello, world!";
+          break;
+        case 1:
+          response = "You can be either a man or a woman";
+          break;
+        case 2:
+          response = "Windows 11 is the last Operating System from Microsoft";
+          break;
+        case 3:
+          reponse = "2+2 = 4";
+          break;
+        case 4:
+          response = "A listener indicated an asynchronous response by returning true";
+          break;
+        case 5:
+          response = "This is the fifth response";
+          break;
+      }
+
+      console.log(`${userString}\n${response}`);
+    </script>
+  </body>
+</html>
