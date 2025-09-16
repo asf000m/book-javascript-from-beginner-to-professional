@@ -7,4 +7,4 @@
 <h3>1. Getting Started with JavaScript - <em>Completed</em></h3>
 <h3>2. JavaScript Essentials - <em>Completed</em></h3>
 <h3>3. JavaScript Multiple Values</h3>
-<h3>4. Logic Statements</h3>
+<h3>4. Logic Statements - <em>Completed</em></h3>
