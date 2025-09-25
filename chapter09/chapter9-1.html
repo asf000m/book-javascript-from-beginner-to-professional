@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 9</title>
+  </head>
+  <body>
+    <h1>DOM</h1>
+    <div>
+      <p>Hello, web!</p>
+      <a href="https://www.google.com">Here's a link!</a>
+    </div>
+    <hr> <!-- -------------------------------------------------- -->
+    <div class="output">Test</div>
+    <script>
+      const ele1 = document.querySelector("h1");
+      console.dir(ele1);
+
+      const eles = document.querySelectorAll(".output");
+      console.log(eles);
+
+      let divElement = document.querySelector(".output");
+      divElement.textContent = "This element has a new textContent";
+      divElement.classList.add("red");
+      divElement.id = "tester";
+      divElement.style.backgroundColor = "lightcoral";
+      console.log(document.URL);
+      console.log(divElement);
+
+    </script>
+  </body>
+</html>

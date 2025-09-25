@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter Project</title>
+  </head>
+  <body>
+    <div class="output">
+      <h1>Hello</h1>
+      <div>Test</div>
+      <ul>
+        <li id="one">One</li>
+        <li class="red">Two</li>
+      </ul>
+      <div>Test</div>
+    </div>
+    <script>
+      let classOutput = document.querySelector(".output");
+      let mainList = document.querySelector(".output ul");
+      mainList.id = "mainList";
+      console.log(document.querySelectorAll("div"));
+
+      console.log(classOutput, mainList);
+    </script>
+  </body>
+</html>
