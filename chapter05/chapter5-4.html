@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chapter 5 - Nested loops</title>
+</head>
+<body>
+  <script>
+    let outerArray = [];
+    for (let i = 0; i < 3; i++) {
+      outerArray.push([]);
+      for (let j = 0; j < 7; j++) {
+        outerArray[i].push(j);
+      }
+    }
+    console.log(outerArray);
+    console.table(outerArray);
+
+    // practice exercise 5.4
+    // 1.
+    let myTable = [];
+    // 2.
+    let rows = 4;
+    let columns = 6;
+    // 3.
+    let counter = 0;
+    // 4.
+    for (let i = 0; i < rows; i++) {
+      let tempTable = [];
+      // 5.
+      for (let j = 0; j < columns; j++) {
+        // 6.
+        counter++;
+        // 7.
+        tempTable.push(counter);
+      }
+      // 8.
+      myTable.push(tempTable);
+    }
+    // 9.
+    console.table(myTable);
+  </script>
+</body>
+</html>

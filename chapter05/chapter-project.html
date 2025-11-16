@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chapter project</title>
+</head>
+<body>
+  <script>
+    let multiplicationTable = [];
+    let value = 10;
+    for (let row = 1; row <= value; row++) {
+      let temp = [];
+      for (let column = 1; column <= value; column++) {
+        temp.push(row * column);
+      }
+      multiplicationTable.push(temp);
+    }
+    console.table(multiplicationTable);
+  </script>
+</body>
+</html>

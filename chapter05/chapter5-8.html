@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chapter 5 - break, continue, and nested loops</title>
+</head>
+<body>
+  <script>
+    let groups = [
+      ['Martin', 'Daniel', 'Keith'],
+      ['Margot', 'Marina', 'Ali'],
+      ['Helen', 'Jonah', 'Sambikos'],
+    ];
+
+    for (let i = 0; i < groups.length; i++) {
+      let matches = 0;
+      
+      for (let j = 0; j < groups[i].length; j++) {
+        if (groups[i][j].startsWith('M')) {
+          matches++;
+        } else {
+          continue;
+        }
+        if (matches === 2) {
+          console.log('Found a group with two names starting with an M:');
+          console.log(groups[i]);
+          break;
+        }
+      }
+    }
+
+    outer:
+    for (let group of groups) {
+      inner:
+      for (let member of group) {
+        if (member.startsWith('M')) {
+          console.log('found one starting with M:', member);
+          break outer;
+        }
+      }
+    }
+
+    let step = 3;
+    for (let i = 0; i < 1000; i += step) {
+      if (i > 10) {
+        break;
+      }
+      console.log(i);
+    }
+
+    const myArray = [1, 5, 7];
+    for (el in myArray) {
+      console.log(Number(el));
+      el = Number(el) + 5;
+      console.log(el);
+    }
+    console.log(myArray);
+  </script>
+</body>
+</html>

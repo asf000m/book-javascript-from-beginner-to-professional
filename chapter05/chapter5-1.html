@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chapter 5 - while loops</title>
+</head>
+<body>
+  <script>
+    let i = 0;
+    while (i < 10) {
+      console.log(i);
+      i++;
+    }
+
+    let someArray = ['apple', 'banana', 'melon', 'lemon', 'orange', 'avocado'];
+    let notFound = true;
+    while (notFound && someArray.length > 0) {
+      if (someArray[0] === 'orange') {
+        console.log('Found it! Orange!');
+        notFound = false;
+      } else {
+        console.log(`Found ${someArray[0]}`);
+        someArray.shift();
+      }
+    }
+
+    let n1 = 0;
+    let n2 = 1;
+    let temp;
+    fibonacciArray = [];
+    while (fibonacciArray.length < 25) {
+      fibonacciArray.push(n1);
+      temp = n1 + n2;
+      n1 = n2;
+      n2 = temp;
+    }
+    console.log(...fibonacciArray);
+
+    // practice exercise 5.1
+    // 1.
+    let maxGuesses = 10;
+    // 2.
+    const maxInterval = 100;
+    let solution = Math.ceil(Math.random() * maxInterval);
+    // 3.
+    let notCorret = true;
+    // 4.
+    while (notCorret && maxGuesses <= 10) {
+      let guess = Number(prompt(`Enter a guess for a number between 0 to ${maxInterval}`));
+      // 5.
+      if (guess < solution) {
+        console.log('It was higher');
+        maxGuesses--;
+      } else if (guess > solution) {
+        console.log('It was lower');
+        maxGuesses--;
+      } else {
+        console.log("That's it");
+        notCorret = false;
+        maxGuesses--;
+      }
+    }
+    console.log(`Number of guesses available: ${maxGuesses}`);
+  </script>
+</body>
+</html>

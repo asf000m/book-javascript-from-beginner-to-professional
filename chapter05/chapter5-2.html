@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chapter 5 - do while loops</title>
+</head>
+<body>
+  <script>
+    let number;
+    do {
+      number = Number(prompt('Please enter a number between 0 and 100'));
+    } while (!(number >= 0 && number < 100));
+
+    // practice exercise 5.2
+    // 1.
+    let counter = 0;
+    // 2.
+    let step = 1.5;
+    // 3.
+    do {
+      console.log(counter);
+      counter += step;
+    } while (counter < 100);
+  </script>
+</body>
+</html>

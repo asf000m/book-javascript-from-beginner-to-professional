@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chapter 5 - Loops and objects</title>
+</head>
+<body>
+  <script>
+    let car = {
+      model: 'gold',
+      make: 'volkswagen',
+      year: 1999,
+      color: 'black',
+    };
+    for (let prop in car) {
+      console.log(prop, car[prop]);
+    }
+
+    // practice exercise 5.7
+    // 1. 2.
+    for (let prop in car) {
+      console.log(prop, car[prop]);
+    }
+    // 3.
+    let carProps = [];
+    let carValues = [];
+    for (let prop in car) {
+      carProps.push(prop);
+      carValues.push(car[prop]);
+    }
+    console.log(carProps, carValues);
+
+    let arrKeys = Object.keys(car);
+    console.log(arrKeys);
+    for (let key of arrKeys) {
+      console.log(key);
+    }
+    let arrValues = Object.values(car);
+    console.log(arrValues);
+    for (let value of arrValues) {
+      console.log(value);
+    }
+    let arrEntries = Object.entries(car);
+    console.log(arrEntries);
+  </script>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chapter 5 - Loops and arrays</title>
+</head>
+<body>
+  <script>
+    let fruits = ['banana', 'apple', 'orange', 'watermelon', 'melon', 'grape'];
+    for (let i = 0; i < fruits.length; i++) {
+      console.log(fruits[i]);
+    }
+
+    for (let i = 0; i < fruits.length; i++) {
+      fruits[i] = 'I like ' + fruits[i];
+    }
+    console.log(fruits.join('\n'));
+
+    let names = ['Maria', 'Marcos', 'Paulo', 'João', 'Silvio', 'Marcelo', 'Ana', 'Jorge'];
+    for (let i = 0; i < names.length; i++) {
+      if (names[i].startsWith('M')) {
+        delete names[i];
+        continue;
+      }
+      names[i] = 'hello ' + names[i];
+    }
+    console.log(names.join('\n'));
+
+    // practice exercise 5.5
+    // 1.
+    let gridArray = [];
+    // 2.
+    let cells = 64;
+    // 3.
+    let counter = 0;
+    // 4.
+    let row;
+    // 5.
+    for (let i = 0; i < cells + 1; i++) {
+      // 6.
+      if (i % 8 === 0) {
+        // 7.
+        if (row !== undefined) {
+          gridArray.push(row);
+        }
+        // 8.
+        row = [];
+      }
+      // 9.
+      counter++;
+      // 10.
+      row.push(counter);
+      // 11.
+      if (counter === 8) {
+        gridArray.push(row);
+      }
+    }
+    console.log(gridArray);
+
+    names = ['João', 'Silvio', 'Marta', 'Sofia', 'Asafe', 'Sara', 'Marcos', 'Kely'];
+    for (let name of names) {
+      console.log(name);
+    }
+
+    // practice exercise 5.6
+    // 1.
+    let arr = [];
+    // 2.
+    for (let i = 0; i < 10; i++) {
+      arr.push(Math.ceil(Math.random() * 100));
+    }
+    // 3.
+    console.log(...arr);
+    // 4.
+    for (let i = 0; i < 10; i++) {
+      console.log(arr[i]);
+    }
+    // 5.
+    for (let item of arr) {
+      console.log(item);
+    }
+  </script>
+</body>
+</html>
