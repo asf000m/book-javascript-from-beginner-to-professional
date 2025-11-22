@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="JavaScript from Beginner to Professional">
+  <title>Chapter 11 - Interactice Content and Event Listeners</title>
+</head>
+<body>
+  <p id="unique" onclick="magic()">Click here for magic!</p>
+  <p id="unique2">Click here for magic, 2!</p>
+  <p id="unique3">Click here for magic, 3!</p>
+
+  <script>
+    const magic = x => console.log(`Magic! ${(Math.random() * 100).toFixed(2)}`);
+    document.getElementById('unique2').onclick = magic;
+
+    document.getElementById('unique3').addEventListener('click', magic);
+
+    document.addEventListener('DOMContentLoaded', (e) => console.log(e));
+  </script>
+</body>
+</html>

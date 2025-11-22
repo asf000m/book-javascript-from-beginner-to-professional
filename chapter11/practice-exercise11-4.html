@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chapter 11 - Practice exercise 11.4</title>
+  <style>
+  </style>
+</head>
+<body>
+  <div class="square"></div>
+
+  <script>
+    function changeColor(color, event) {
+      console.log(`Color: ${color}`);
+      console.log(`Event type: ${event}`);
+      square.style.backgroundColor = color;
+    }
+
+    const square = document.querySelector('.square');
+    square.textContent = 'Hello, world!';
+    square.style.width = '400px';
+    square.style.height = '400px';
+    square.style.border = '1px solid lightgray';
+    square.style.backgroundColor = 'lightgray';
+
+    square.addEventListener('mousedown', (e) => changeColor('green', e));
+    square.addEventListener('mouseover', (e) => changeColor('red', e));
+    square.addEventListener('mouseout', (e) => changeColor('yellow', e));
+    square.addEventListener('mouseup', (e) => changeColor('blue', e));
+  </script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chapter 11 - Practice exercise 11.1</title>
+  <style>
+    body {
+      width: 50%;
+      margin: auto;
+      font-family: 'Times New Roman', Times, serif;
+      font-size: 1.5em;
+    }
+    #darkModeButton {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      font-size: 1.25rem;
+      background-color: black;
+      color: white;
+      border-radius: 3px;
+      border: 1px solid white;
+    }
+  </style>
+</head>
+<body>
+  <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h1>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo ab necessitatibus mollitia officia facere voluptatem unde nobis, quibusdam in aperiam! Soluta ullam architecto ipsum eligendi est vitae ad nobis distinctio? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto iusto, quo rem ex ut temporibus facere quas! Molestiae ipsum inventore obcaecati maiores cum odio id perferendis repellendus, praesentium corrupti architecto!</p>
+  <h2>Nesciunt voluptatem vel tempora doloremque!</h2>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure qui odit, quidem officiis similique mollitia ipsum quae, aliquid molestiae tempore iste numquam fugit recusandae, distinctio labore perferendis suscipit velit natus.</p>
+  <h2>Cum fuga ipsum amet hic fugit dolorum facere, magnam molestiae rerum, quia molestias voluptatum ullam enim omnis.</h2>
+  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut consectetur numquam pariatur quam doloremque dolorem deleniti natus ipsa rerum sed eum velit dolorum voluptatem, non aspernatur odio voluptas eos laudantium!</p>
+
+  <button id="darkModeButton" type="button">Dark Mode</button>
+
+  <script>
+    function darkModeToggle() {
+      if (darkMode === false) {
+        document.body.style.backgroundColor = 'black';
+        document.body.style.color = 'white';
+        darkMode = true;
+      } else {
+        document.body.style.backgroundColor = 'white';
+        document.body.style.color = 'black';
+        darkMode = false;
+      }
+    }
+
+    let darkMode = false;
+    let darkModeButton = document.querySelector('#darkModeButton');
+    darkModeButton.addEventListener('click', darkModeToggle);
+  </script>
+</body>
+</html>

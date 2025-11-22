@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chapter 11 - Practice exercise 11.2</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    main {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      height: 100dvh;
+      margin: 0;
+    }
+    div {
+      width: 25%;
+      height: 120px;
+      margin: auto;
+      text-align: center;
+      border: 1px solid lightgray;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div>red</div>
+    <div>blue</div>
+    <div>green</div>
+    <div>purple</div>
+    <div>orange</div>
+    <div>black</div>
+    <div>pink</div>
+  </main>
+
+  <script>
+    function changeColor(event) {
+      event.target.style.backgroundColor = event.target.textContent;
+      event.target.style.color = 'white';
+      event.target.style.fontWeight = 'bold';
+    }
+
+    const divElements = document.querySelectorAll('div');
+    divElements.forEach(element => element.addEventListener('click', changeColor));
+  </script>
+</body>
+</html>
