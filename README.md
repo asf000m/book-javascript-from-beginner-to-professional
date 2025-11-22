@@ -14,3 +14,8 @@
 <h3>8. Built-In JavaScript Methods</h3>
 <h3>9. The Document Object Model - <em>Completed 2025-09-24</em></h3>
 <h3>10. Dynamic Element Manipulation Using the DOM</h3>
+<h3>11. Interactive Content and Event Listeners</h3>
+<h3>12. Intermediate JavaScript</h3>
+<h3>13. Concurrency</h3>
+<h3>14. HTML5, Canvas, And JavaScript</h3>
+<h3>15. Next Steps</h3>
