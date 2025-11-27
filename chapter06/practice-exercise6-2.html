@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chapter 6 - Practice exercise 6.2</title>
+</head>
+<body>
+  <script>
+    function askName() {
+      const name = prompt('Enter your name');
+      const word = words[Math.ceil(Math.random() * words.length - 1)];
+      console.log(name, word);
+    }
+
+    const words = ['tall', 'big', 'clean', 'small', 'sleak'];
+
+    askName();
+  </script>
+</body>
+</html>

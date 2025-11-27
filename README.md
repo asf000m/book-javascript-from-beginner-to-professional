@@ -9,7 +9,7 @@
 <h3>3. JavaScript Multiple Values</h3>
 <h3>4. Logic Statements - <em>Completed 2025-09-10</em></h3>
 <h3>5. Loops - <em>Completed 2025-11-15</em></h3>
-<h3>6. Functions</h3>
+<h3>6. Functions - <em>Completed 2025-11-26</em></h3>
 <h3>7. Classes</h3>
 <h3>8. Built-In JavaScript Methods</h3>
 <h3>9. The Document Object Model - <em>Completed 2025-09-24</em></h3>

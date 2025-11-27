@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chapter 6 - Practice exercise 6.4</title>
+</head>
+<body>
+  <script>
+    function calculator(x, y, operation) {
+      switch (operation) {
+        case '+':
+          return x + y;
+          break;
+        case '-':
+          return x - y;
+          break;
+        default:
+          return x + y;
+          break;
+      }
+    }
+
+    function addTwoNumbers(x, y) {
+      return x + y;
+    }
+
+    const resultValues = [];
+    for (let i = 0; i < 10; i++) {
+      resultValues.push(calculator(i * 5, i * i));
+    }
+    console.log(resultValues);
+  </script>
+</body>
+</html>

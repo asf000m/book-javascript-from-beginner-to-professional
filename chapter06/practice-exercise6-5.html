@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chapter 6 - Practice exercise 6.5</title>
+</head>
+<body>
+  <script>
+    let v1 = '1000';
+
+    (() => {
+      v1 = '10';
+      console.log(v1);
+    })();
+
+    console.log(v1);
+
+    let result = (() => {
+      v1 = '100';
+    })();
+    console.log(result, v1);
+
+  </script>
+</body>
+</html>

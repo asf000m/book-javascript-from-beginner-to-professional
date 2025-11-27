@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chapter 6 - Functions</title>
+</head>
+<body>
+  <script>
+    function sayHello() {
+      const you = prompt("What's your name?");
+      console.log(`Hello ${you}!`);
+    }
+
+    function addTwoNumbers(x = 2, y = 3) {
+      console.log(x + y);
+    }
+
+    const logString = str => console.log(str);
+
+    const sayHi = () => console.log('Hi!');
+
+    const animals = ['bear', 't. rex', 'monkey', 'jaguar', 'dolphin'];
+    animals.forEach(animal => console.log(`I like my ${animal}`));
+
+    const spread = ['so', 'much', 'fun'];
+    const message = ['JavaScript', 'is', ...spread, 'and', 'very', 'powerful'];
+    console.log(message);
+
+    const twoNumbers = [903, 341];
+    addTwoNumbers(...twoNumbers);
+
+    function someFunction(p1, ...p2) {
+      console.log(p1, p2);
+    }
+    someFunction('Hi', 'there!', 'How are you?');
+  </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chapter 6 - Recursive functions</title>
+</head>
+<body>
+  <script>
+    function getRecursive(number) {
+      console.log(number);
+      if (number > 0) {
+        getRecursive(--number);
+      }
+    }
+
+    function logRecursive(number) {
+      console.log('Started function:', number);
+      if (number > 0) {
+        logRecursive(--number);
+      } else {
+        console.log('done with recursion');
+      }
+      console.log('Ended function:', number);
+    }
+  </script>
+</body>
+</html>
