@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 3</title>
+  </head>
+  <body>
+    <script>
+      let arr8 = [4, 12, 14, 16, 20, 5, 7, 14, 12];
+      let findNumber = arr8.find(function(e) { return e === 12});
+      let findNumber2 = arr8.find(e => e === 20);
+      console.log(findNumber, findNumber2);
+
+      let findIndex = arr8.indexOf(14);
+      let findIndex2 = arr8.indexOf(10);
+      console.log(findIndex, findIndex2);
+
+      let findIndex3 = arr8.indexOf(20, 2);
+      console.log(findIndex3);
+
+      let lastIndex = arr8.lastIndexOf(14);
+      console.log(lastIndex);
+
+      let names = ['james', 'alicia', 'sophia', 'fatiha', 'maria', 'bert'];
+      names.sort();
+      console.log(names);
+
+      let ages = [5, 12, 44, 23, 32, 50];
+      ages.sort();
+      console.log(ages);
+
+      names.reverse();
+      ages.reverse()
+      console.log(names);
+      console.log(ages);
+
+      // practice exercise 3.2
+      // 1.
+      let shoppingList = [];
+      // 2.
+      shoppingList.unshift('milk', 'bread', 'apples');
+      console.log(shoppingList);
+      // 3.
+      shoppingList.splice(shoppingList.indexOf('bread'), 1, 'bananas', 'eggs');
+      console.log(shoppingList);
+      // 4.
+      console.log(shoppingList.pop());
+      // 5.
+      shoppingList.sort();
+      console.log(shoppingList);
+      // 6.
+      console.log(shoppingList.indexOf('milk'));
+      // 7.
+      shoppingList.splice(
+        shoppingList.indexOf('bananas') + 1,
+        0,
+        'carrots',
+        'lettuce');
+      console.log(shoppingList);
+      // 8.
+      let newShoppingList = ['juice', 'pop'];
+      console.log(newShoppingList);
+      // 9.
+      let combinedLists = shoppingList.concat(newShoppingList, newShoppingList);
+      console.log(combinedLists);
+      // 10.
+      console.log(combinedLists.lastIndexOf('pop'));
+    </script>
+  </body>
+</html>

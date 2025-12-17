@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chapter 3 - Chapter projects - Company product catalog</title>
+</head>
+<body>
+  <script>
+    const inventory = [];
+    
+    const item1 = {
+      name: 'smartphone',
+      model: 'R24 SE',
+      cost: 1800,
+      quantity: 300
+    };
+    const item2 = {
+      name: 'headset',
+      model: 'H365',
+      cost: 300,
+      quantity: 250
+    };
+    const item3 = {
+      name: 'monitor',
+      model: 'K892F',
+      cost: 270,
+      quantity: 100
+    };
+
+    inventory.push(item1, item2, item3);
+    console.log(inventory);
+    console.log(inventory[2].quantity);
+  </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 3</title>
+  </head>
+  <body>
+    <script>
+      let values1 = [3, 6, 9];
+      let values2 = [20, 40, 60];
+      let values3 = [99, 999, 9999];
+      let arrValues = [values1, values2, values3];
+      console.log(arrValues);
+
+      let value1 = arrValues[0][1];
+      console.log(value1);
+      let value2 = arrValues[2][0];
+      console.log(value2);
+
+      arrOfArrOfValues = [arrValues, arrValues, arrValues];
+      console.log(arrOfArrOfValues);
+      let middleValue = arrOfArrOfValues[1][1][1];
+      console.log(middleValue);
+
+      // practice exercise 3.3
+      // 1. 
+      let arr1 = [1, 2, 3];
+      let arr2 = [arr1, arr1, arr1];
+      console.log(arr2[1][1]);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chapter 3 - Chapter projects - Manipulating an array</title>
+</head>
+<body>
+  <script>
+    const theList = ['Laurence', 'Svekis', true, 35, null, undefined, {test: 'one', score: 55}, ['one', 'two']];
+
+    theList.shift();
+    theList.pop();
+    theList.unshift('FIRST');
+    theList.splice(3, 1, 'hello World');
+    theList.splice(2, 1, 'MIDDLE');
+    theList.push('LAST');
+    theList.splice(4, 3);
+    
+    console.log(theList);
+  </script>
+</body>
+</html>

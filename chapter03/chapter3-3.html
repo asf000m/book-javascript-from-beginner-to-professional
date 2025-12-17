@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 3</title>
+  </head>
+  <body>
+    <script>
+      favFruits = ['grapefruit', 'orange', 'lemon'];
+      console.log(favFruits);
+      favFruits.push('tangerine');
+      console.log(favFruits);
+      let length_favFruits = favFruits.push('lime');
+      console.log(length_favFruits, favFruits);
+
+      let shapes = ['circle', 'triangle', 'rectangle', 'pentagon'];
+      console.log(shapes);
+      shapes.splice(2, 0, 'square', 'trapezoid');
+      console.log(shapes);
+      shapes.splice(2, 2, 'cilinder', 'decaedron');
+      console.log(shapes);
+      shapes.splice(2, 15, 'ball', 'cube');
+      console.log(shapes);
+
+      let fruitsAndShapes = favFruits.concat(shapes);
+      console.log(fruitsAndShapes);
+      let poped = fruitsAndShapes.pop();
+      console.log(poped, fruitsAndShapes);
+      let shifted = fruitsAndShapes.shift();
+      console.log(shifted, fruitsAndShapes);
+      fruitsAndShapes.splice(4, 3);
+      console.log(fruitsAndShapes);
+
+      delete fruitsAndShapes[2];
+      console.log(fruitsAndShapes);
+    </script>
+  </body>
+</html>
